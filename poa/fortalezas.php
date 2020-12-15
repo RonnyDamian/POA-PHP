@@ -1,4 +1,4 @@
-<title>POA | Oportunidadea</title> 
+<title>POA | Fortalezas</title> 
 <?php 
   require_once("header.php");
 ?>
@@ -15,7 +15,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="home.php">Página Principal</a></li>
-              <li class="breadcrumb-item active">Oportunidades</li>
+              <li class="breadcrumb-item active">Fortalezas</li>
             </ol>
           </div>
         </div>
@@ -29,7 +29,7 @@
           <!-- left column -->
           <div class="col-md-12">
             <!-- general form elements -->
-            <div class="card card-warning">
+            <div class="card card-success">
               <div class="card-header">
                 <h3 class="card-title">
               <i class="fas fa-table"></i> &nbsp;
@@ -48,7 +48,7 @@
                     <input type="number" min="1"  max="10" class="form-control" >
                   </div>
                   <div class="col-md-4">
-                      <button type="submit" class="btn btn-warning float-left" style="margin-top:32px">                                            
+                      <button type="submit" class="btn btn-success float-left" style="margin-top:32px">
                       <strong>Generar</strong> 
                       <i class="fas fa-arrow-circle-right"></i>
                       </button>  
@@ -61,11 +61,11 @@
 
             <div class="row">
           <div class="col-12">
-            <div class="card card-warning">
+            <div class="card card-success">
               <div class="card-header">
                 <h3 class="card-title">
                 <i class="fas fa-plus-circle"></i>
-                  &nbsp;  <strong>OPORTUNIDADES</strong>
+                  &nbsp;  <strong>FORTALEZAS</strong>
                 </h3>
  
               </div>
@@ -156,7 +156,7 @@
                       <td><span class="tag tag-success"><input type="text" value="1" class="form-control text-center"></td>
                     </tr>
                   </tbody>
-                    <tfoot class="bg-warning">
+                    <tfoot class="bg-success">
                         <tr><td colspan="6"> </td></tr>
                         <tr><td colspan="6"> </td></tr>
                     </tfoot>
@@ -178,8 +178,7 @@
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-
-</div>
+  </di
 
 <?php 
 require_once("footer.php");

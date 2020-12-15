@@ -1,4 +1,3 @@
-
   <!-- Main Footer -->
   <footer class="main-footer " style="background-color: #28a745;color:white" >
     <strong>Copyright &copy; 2020  </strong>

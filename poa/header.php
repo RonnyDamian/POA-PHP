@@ -4,10 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="icon" href="../../dist/img/icono.png">
-
   <title>POA | Página Principal</title>
-
+  <link rel="icon" href="img/icono.png">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
   <!-- IonIcons -->
@@ -16,8 +14,6 @@
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
-  
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -85,28 +81,28 @@ to get the desired effect
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open " >
-            <a href="#" class="nav-link foda">
+            <a href="#" class="nav-link  ">
               <i class="nav-icon fas fa-tachometer-alt  " style=" color: #28a745;"></i>
               <p >
-                 <strong class="text-white">Cuenta</strong>
-                <i class="right fas fa-angle-left foda"></i>
+                 <strong class="text-white">CUENTA</strong>
+                <i class="right fas fa-angle-left  right" style="color:#28a745;"></i>
               </p>
             </a>
             <ul class="nav nav-treeview" id="fodaul">
               <li class="nav-item">
-                <a href="../index3.html" class="nav-link  ">
+                <a href="#" class="nav-link  ">
                   <i class="fab fa-slack" style=" color: #28a745;"></i>
                   <p class="text-white">Perfil</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../index3.html" class="nav-link ">
+                <a href="#" class="nav-link ">
                   <i class="fab fa-sith" style=" color: #28a745;"></i>
                   <p class="text-white">Cambiar contraseña</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../index3.html" class="nav-link    ">
+                <a href="#" class="nav-link    ">
                   <i class="fas fa-dice-d20" style=" color: #28a745;"></i>
                   <p class="text-white">Cambiar email</p>
                 </a>
@@ -114,12 +110,21 @@ to get the desired effect
              
             </ul>
           </li>  
+          <p>______________________________</p>
+          <li class="nav-item has-treeview">
+            <a href="empresa.php" class="nav-link">
+            <i class="nav-icon fas fa-hotel" style=" color: #28a745;"></i>
+              <p class="text-white">
+                <strong>EMPRESA</strong>
+              </p>
+            </a>
+           </li>
            <p>______________________________</p>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit" style="color:#28a745;"></i>
+            <i class="nav-icon fas fa-gem" style=" color: #28a745;"></i>
               <p class="text-white">
-                FODA
+                <strong>FODA</strong>
                 <i class="fas fa-angle-left right" style="color:#28a745;"></i>
               </p>
             </a>
@@ -131,19 +136,19 @@ to get the desired effect
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../pages/forms/advanced.html" class="nav-link">
+                <a href="amenazas.php" class="nav-link">
                   <i class="far fa-circle nav-icon text-danger"></i>
                   <p>Amenazas</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../pages/forms/editors.html" class="nav-link">
+                <a href="fortalezas.php" class="nav-link">
                   <i class="far fa-circle nav-icon text-success"></i>
                   <p>Fortalezas</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../pages/forms/validation.html" class="nav-link">
+                <a href="debilidades.php" class="nav-link">
                   <i class="far fa-circle nav-icon text-info"></i>
                   <p>Debilidades</p>
                 </a>
