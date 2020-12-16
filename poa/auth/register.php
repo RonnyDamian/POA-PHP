@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" href="dist/img/icono.png">
-  <title>Joint BS | Inicar Sesión</title>
+  <link rel="icon" href="../../dist/img/icono.png">
+  <title>POA | Formulario de Registro</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,17 +19,25 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body class="hold-transition login-page">
-<div class="login-box">
-  <div class="login-logo">
-    <a href="../../index2.html"><b>JOINT</b>BS</a>
+<body class="hold-transition register-page">
+<div class="register-box">
+  <div class="register-logo">
+    <a href="../../index2.html" class="text-success"><b><strong>JOINT</strong> BS</b></a>
   </div>
-  <!-- /.login-logo -->
-  <div class="card">
-    <div class="card-body login-card-body">
-      <p class="login-box-msg">Credenciales de Autenticación</p>
 
-      <form action="index3.html" method="post">
+  <div class="card">
+    <div class="card-body register-card-body">
+      <h5 class="login-box-msg">Formulario de Registro</h5>
+
+      <form action="../../index.html" method="post">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Nombre completo">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email">
           <div class="input-group-append">
@@ -46,50 +54,53 @@
             </div>
           </div>
         </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Repetir contraseña">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
-              <input type="checkbox" id="remember">
+              <input type="checkbox" id="agreeTerms" name="terms" value="agree">
               
             </div>
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <a href="index3.html" class="btn btn-primary btn-block">Acceder</a>
+            <button type="submit" class="btn btn-success btn-block">Registrar</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
 
-      <div class="social-auth-links text-center mb-3">
+      <div class="social-auth-links text-center">
         <p>- O -</p>
-        <a href="#" class="btn btn-block btn-primary">
-          <i class="fab fa-facebook mr-2"></i> Iniciar sesión con Facebook
-        </a>
         <a href="#" class="btn btn-block btn-danger">
-          <i class="fab fa-google-plus mr-2"></i> Iniciar sesión con Google+
+          <i class="fab fa-google-plus mr-2"></i>
+          Registrarse usando Google+
+        </a>
+        <a href="#" class="btn btn-block btn-success">
+          <i class="fab fa-facebook mr-2  "></i>
+          Registrarse usando Facebook
         </a>
       </div>
-      <!-- /.social-auth-links -->
 
-      <p class="mb-1">
-        <a href="pages/examples/forgot-password.html">Olvidé mi contraseña</a>
-      </p>
-      <p class="mb-0">
-        <a href="pages/examples/register.html" class="text-center">¿Necesitas una cuenta? Registrate ahora</a>
-      </p>
+      <a href="index.php" class="text-center">¿Ya tiene una cuenta? Iniciar sesión</a>
     </div>
-    <!-- /.login-card-body -->
-  </div>
+    <!-- /.form-box -->
+  </div><!-- /.card -->
 </div>
-<!-- /.login-box -->
-  
+<!-- /.register-box -->
+
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
-
 </body>
 </html>
