@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!--Toast Notificación -->
+  <link rel="stylesheet" href="../../plugins/toastr/toastr.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -29,9 +31,9 @@
     <div class="card-body login-card-body">
       <h5 class="login-box-msg">Credenciales de Autenticación</h5>
 
-      <form action="index3.html" method="post">
+      <form id="formLogin" method="post" >
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" class="form-control" placeholder="Email" name="email" id="email" >
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -39,7 +41,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Contraseña">
+          <input type="password" class="form-control" placeholder="Contraseña" name="password" id="password" >
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -55,9 +57,9 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <a href="../home.php" class="btn btn-success btn-block">Acceder 
+            <button type="submit" class="btn btn-success btn-block">Acceder
               <i class="fas fa-chevron-right"></i>
-            </a>
+            </button>
           </div>
           <!-- /.col -->
         </div>
@@ -93,6 +95,9 @@
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
+<!--Toast Notification -->
+<script src="../../plugins/toastr/toastr.min.js"></script>
 
+<script src="../js/codigo.js"></script>
 </body>
 </html>

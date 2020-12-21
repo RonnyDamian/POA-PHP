@@ -22,5 +22,7 @@
 <script src="../plugins/chart.js/Chart.min.js"></script>
 <script src="../dist/js/demo.js"></script>
 <script src="../dist/js/pages/dashboard3.js"></script>
+<script src="../plugins/toastr/toastr.min.js"></script>
+<script src="js/codigo.js"></script>
 </body>
 </html>

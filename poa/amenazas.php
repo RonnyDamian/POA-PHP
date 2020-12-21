@@ -175,10 +175,6 @@
           <!--/.col (right) -->
         </div>
         <!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-  </di
 
 <?php 
 require_once("footer.php");

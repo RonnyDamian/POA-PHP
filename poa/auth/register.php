@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!--Llamado dependencia Toasr -->
+  <link rel="stylesheet" href="../../plugins/toastr/toastr.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -29,9 +31,9 @@
     <div class="card-body register-card-body">
       <h5 class="login-box-msg">Formulario de Registro</h5>
 
-      <form action="../../index.html" method="post">
+      <form id="formRegister" method="post" >
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Nombre completo">
+          <input type="text" class="form-control" placeholder="Nombre completo" name="name" id="name">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -39,7 +41,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" class="form-control" placeholder="Email" name="email" id="email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -47,7 +49,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Contraseña">
+          <input type="password" class="form-control" placeholder="Contraseña" name="password" id="password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -55,7 +57,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Repetir contraseña">
+          <input type="password" class="form-control" placeholder="Repetir contraseña" name="password2" id="password2">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -102,5 +104,7 @@
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
+<script src="../../plugins/toastr/toastr.min.js"></script>
+<script src="../js/register.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<title>POA | Fortalezas</title>
+<title>POA | Determinación</title>
 <?php
 require_once("header.php");
 ?>
@@ -459,10 +459,6 @@ require_once("header.php");
     <!--/.col (right) -->
 </div>
 <!-- /.row -->
-</div><!-- /.container-fluid -->
-</section>
-<!-- /.content -->
-</di
 
 <?php
 require_once("footer.php");
