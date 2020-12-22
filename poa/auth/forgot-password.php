@@ -47,7 +47,7 @@
       </form>
 
       <p class="mt-3 mb-1">
-        <a href="index.php">Iniciar sesión</a>
+        <a href="../index.php">Iniciar sesión</a>
       </p>
       <p class="mb-0">
         <a href="register.php" class="text-center">Registrarse ahora</a>

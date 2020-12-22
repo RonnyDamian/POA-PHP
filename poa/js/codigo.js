@@ -24,7 +24,7 @@ $('#formLogin').submit(function(e){
       return false; 
     }else{
         $.ajax({
-           url:"../controller/ControllerLogin.php",
+           url:"controller/ControllerLogin.php",
            type:"POST",
            data: $('#formLogin').serialize(),
            success:function(success){
@@ -48,7 +48,7 @@ $('#formLogin').submit(function(e){
                  }
                  toastr["danger"]("Error de Autenticación ", "Usuario y/o password incorrecta")
                }else if(success == 1){
-                 setTimeout("location.href='../home.php'", 1500);
+                 setTimeout("location.href='home.php'", 1500);
                  toastr.options = {
                    "closeButton":true,
                    "newestOnTop": true,
@@ -83,7 +83,7 @@ $('#formLogin').submit(function(e){
                    "showMethod": "fadeIn",
                    "hideMethod": "fadeOut"
                  }
-                 toastr["error"]("El usuario ingresado no existe en los registros", "REGISTRO NO ENCONTRADO")
+                 toastr["error"]("El usuario ingresado no existe en los registros", "ACCESO NO AUTORIZADO")
                }
            }    
         });

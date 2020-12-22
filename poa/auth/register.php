@@ -91,7 +91,7 @@
         </a>
       </div>
 
-      <a href="index.php" class="text-center">¿Ya tiene una cuenta? Iniciar sesión</a>
+      <a href="../index.php" class="text-center">¿Ya tiene una cuenta? Iniciar sesión</a>
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->

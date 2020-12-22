@@ -1,3 +1,11 @@
+<?php
+session_start();
+$usuario =$_SESSION["s_usuario"];
+if(empty($usuario)){
+  header("location:index.php");
+}
+require_once "modal/modalogout.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,30 +53,27 @@ to get the desired effect
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto  ">
       <li class="nav-item">
-        <a class="btn btn-sn" data-toggle="modal" data-target="">Cerrar sesión</a>
+        <a class="btn btn-sn" data-toggle="modal" data-target="#logout">Cerrar sesión</a>
       </li>
     </ul>
   </nav>
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar  elevation-4"  >
+  <aside class="main-sidebar  "  >
     <!-- Brand Logo -->
-    <a href="home.php" class="brand-link" style="background-color: #28a745;" >
-      <img src="img/joint.png" alt="Plan Operativo Anual" class="brand-image"
-           >
+    <a href="home.php" class="brand-link" style="background-color: #28a745; " >
+      <img src="img/joint.png" alt="Plan Operativo Anual" class="brand-image " >
       <span class="brand-text text-white"> &nbsp; POA </span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="../dist/img/AdminLTELogo.png" class="img-circle elevation-2" alt="User Image">
-        </div>
+      <div class="user-panel mt-4    d-flex ">
+
         <div class="info">
-           <h5>Ronny Rodriguez</h5>
+           <h6 class="text-white-100 "><b><?php echo $usuario;?></b></h6>
         </div>        
         
       </div>
@@ -215,3 +220,4 @@ to get the desired effect
     </div>
     <!-- /.sidebar -->
   </aside>
+
