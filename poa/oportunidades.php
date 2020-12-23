@@ -6,7 +6,7 @@ require_once("header.php");
 
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
-  <section class="content-header">
+  <section class="content-header">s
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6"></div>
@@ -54,7 +54,7 @@ require_once("header.php");
               </div>
               <div class="ml-3" id="campo"></div>
               <div class="ml-3" id="campo">
-                <input type="text" value="" id="valor">
+                <input type="hidden" value="" id="valor">
               </div>
               <!-- /.card-body -->
             </form>
@@ -63,35 +63,8 @@ require_once("header.php");
 
           <div class="row">
             <div class="col-12">
-              <div class="card card-warning">
-                <div class="card-header">
-                  <h3 class="card-title">
-                    <i class="fas fa-plus-circle"></i>
-                    &nbsp;  <strong>OPORTUNIDADES</strong>
-                  </h3>
-
-                </div>
+              <div class="card card-warning" id="tabla">
                 <!-- /.card-header -->
-                <div class="card-body table-responsive p-0" >
-                  <table class="table table-head-fixed text-dark table-boreded">
-                    <thead>
-                    <tr>
-                      <th style="width:20%;">Perspectiva</th>
-                      <th style="width:40%;">Descripción</th>
-                      <th class="text-center" style="width:5%;">U</th>
-                      <th class="text-center" style="width:5%;">T</th>
-                      <th class="text-center" style="width:5%;">I</th>
-                      <th class="text-center" style="width:6%;">V</th>
-                    </tr>
-                    </thead>
-                    <tbody id="tabla">
-                    </tbody>
-                    <tfoot class="bg-warning">
-                    <tr><td colspan="6"> </td></tr>
-                    <tr><td colspan="6"> </td></tr>
-                    </tfoot>
-                  </table>
-                </div>
                 <!-- /.card-body -->
               </div>
               <!-- /.card -->
