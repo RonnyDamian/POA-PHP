@@ -24,6 +24,6 @@
 <script src="../dist/js/pages/dashboard3.js"></script>
 <script src="../plugins/toastr/toastr.min.js"></script>
 <script src="js/codigo.js"></script>
-<script src="js/dataOportunidades.js"></script>
+<script src="js/company.js"></script>
 </body>
 </html>

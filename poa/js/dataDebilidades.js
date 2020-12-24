@@ -45,8 +45,7 @@ function data(){
     }
     tabla+="</tbody></table></div><br>";
   }
-    tabla+="<div class='modal-footer'><button type='submit' class='btn btn-md btn-warning' '><b>Guardar</b></button><a href='amenazas.php' class='btn btn-md btn-warning'><b>Continuar</b></a></div>"
-
+  tabla+="<div class='modal-footer'><button type='submit' class='btn btn-md btn-info'><b>Guardar</b></button><a href='determinacion.php' class='btn btn-md btn-info'><b>Continuar</b></a></div>"
 
   $("#tabla").html(tabla);
   $("#tabla1").hide();

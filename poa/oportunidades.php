@@ -1,3 +1,6 @@
+<?php
+$id= isset($_GET['id'])? $_GET['id']:'';
+?>
 <title>POA | Oportunidadea</title>
 <?php
 require_once("header.php");
@@ -62,13 +65,11 @@ require_once("header.php");
           <!-- /.card -->
 
           <div class="row">
-            <div class="col-12">
-              <div class="card card-warning" id="tabla">
-                <!-- /.card-header -->
-                <!-- /.card-body -->
-              </div>
+            <form class="col-12">
+              <div class="card card-warning" id="tabla"></div>
+              <div><input type="hidden" class="form-control" value="<?php echo $id;?>"></div>
               <!-- /.card -->
-            </div>
+            </form>
           </div>
         </div>
         <!-- /.card-body -->
@@ -92,6 +93,7 @@ require_once("header.php");
       this.value = this.value.slice(0,2);
   })
 </script>
+<script src="js/dataOportunidades.js"></script>
 <?php
 require_once("footer.php");
 ?>

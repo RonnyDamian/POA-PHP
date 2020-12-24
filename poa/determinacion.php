@@ -9,9 +9,7 @@ require_once("header.php");
   <section class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">
-        <div class="col-sm-6 text-dark">
-          <h1>Determinación FODA</h1>
-        </div>
+        <div class="col-sm-6 text-dark"></div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="home.php">Página Principal</a></li>

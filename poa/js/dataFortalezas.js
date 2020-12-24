@@ -38,15 +38,14 @@ function data(){
       numFila++;
       tabla+="<tr>"
       for(j=1;j<=5;j++){
-        tabla+="<td> <input type='text'  class='form-control text-center' required></td>";
+        tabla+="<td> <input type='text'  class='form-control text-center' required ></td>";
       }
       tabla+="</tr>";
       //tabla+='</tbody></table></div>';
     }
     tabla+="</tbody></table></div><br>";
   }
-    tabla+="<div class='modal-footer'><button type='submit' class='btn btn-md btn-warning' '><b>Guardar</b></button><a href='amenazas.php' class='btn btn-md btn-warning'><b>Continuar</b></a></div>"
-
+  tabla+="<div class='modal-footer'><button type='submit' class='btn btn-md btn-success'><b>Guardar</b></button><a href='determinacion.php' class='btn btn-md btn-success'><b>Continuar</b></a></div>"
 
   $("#tabla").html(tabla);
   $("#tabla1").hide();

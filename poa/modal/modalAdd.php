@@ -12,40 +12,39 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="">
+        <form id="formAdd" method="post" onsubmit="return addCompany();">
             <div class="row">
                 <div class="col-lg-6">
                     <label for="empresa">Empresa</label>
-                    <input type="text" class="form-control" name="empresa" id="empresa" required>
+                    <input type="text" class="form-control" name="empresa" id="empresa" required minlength="2" maxlength="100">
                 </div>
                 <div class="col-lg-6">
                     <label for="empresa">Giro de Negocio</label>
-                    <input type="text" class="form-control" name="gNegocio" id="gNegocio" required>
+                    <input type="text" class="form-control" name="gNegocio" id="gNegocio" required minlength="2" maxlength="100">
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col-lg-6">
                     <label for="empresa">Email</label>
-                    <input type="email" class="form-control" name="empresa" id="empresa" required>
+                    <input type="email" class="form-control" name="email" id="email" required minlength="4" maxlength="100">
                 </div>
                 <div class="col-lg-6">
                     <label for="empresa">Número de Contacto</label>
-                    <input type="text" class="form-control" name="gNegocio" id="gNegocio" required>
+                    <input type="text" class="form-control" name="contacto" id="contacto" required minlength="10" maxlength="10">
                 </div>
-            </div>             
-            
-        </form>
+            </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary " data-dismiss="modal">
         <i class="fas fa-times"></i>
            &nbsp; Cerrar
         </button>
-        <a href="oportunidades.php"  class="btn btn-success">
+        <button  type="submit" class="btn btn-success">
         <i class="fas fa-save"></i>
           &nbsp;Guardar
-        </a>
+        </button>
       </div>
+      </form>
     </div>
   </div>
 </div>
