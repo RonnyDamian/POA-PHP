@@ -22,6 +22,8 @@ require_once "modal/modalogout.php";
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="../plugins/toastr/toastr.min.css">
+  <!--Llamada de dependencia Sweet Alert -->
+  <link rel="stylesheet" href="../plugins/sweetalert2/sweetalert2.min.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <!--

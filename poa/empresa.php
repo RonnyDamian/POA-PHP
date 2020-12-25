@@ -57,9 +57,7 @@ require_once("header.php");
                   </button>
                 </div>
               </div>
-              <div id="tbCompany" class="table-responsive">
-
-              </div>
+              <div id="tbCompany" class="table-responsive"></div>
             </div>
             <!-- /.card-body -->
           </div>

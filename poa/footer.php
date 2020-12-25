@@ -23,6 +23,7 @@
 <script src="../dist/js/demo.js"></script>
 <script src="../dist/js/pages/dashboard3.js"></script>
 <script src="../plugins/toastr/toastr.min.js"></script>
+<script src="../plugins/sweetalert2/sweetalert2.all.min.js"></script>
 <script src="js/codigo.js"></script>
 <script src="js/company.js"></script>
 </body>
