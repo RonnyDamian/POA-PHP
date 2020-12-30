@@ -23,6 +23,9 @@ function data(){
   var long =0 ;
   var tabla="";
   var numFila=0;
+  var table=0;
+  var row=0;
+  var column=0;
   for(var k=1;k<=bucle;k++){
 
     cadena[k]=$("#"+k ).val().toUpperCase();
@@ -38,17 +41,35 @@ function data(){
       numFila++;
       tabla+="<tr>"
       for(j=1;j<=5;j++){
-        tabla+="<td> <input type='text'  class='form-control text-center' required></td>";
+        tabla+="<td> <input type='text'  class='form-control text-center' name='campo"+j+"_"+i+"_"+z+"' id='campo"+j+"_"+i+"_"+z+"' required></td>";
+        column++;
       }
       tabla+="</tr>";
       //tabla+='</tbody></table></div>';
+      row++;
     }
     tabla+="</tbody></table></div><br>";
+    table++;
   }
-    tabla+="<div class='modal-footer'><button type='submit' class='btn btn-md btn-warning' '><b>Guardar</b></button><a href='amenazas.php' class='btn btn-md btn-warning'><b>Continuar</b></a></div>"
+  tabla+="<div class='modal-footer'><button type='submit' class='btn btn-md btn-warning' '><b>Guardar</b></button><a href='amenazas.php' class='btn btn-md btn-warning'><b>Continuar</b></a><input type='hidden' name='table' id='table' value='"+table+"'><input type='hidden' name='row' id='row' value='"+row+"'><input type='hidden' name='column' id='column' value='"+column+"'></div> ";
 
 
   $("#tabla").html(tabla);
   $("#tabla1").hide();
+  return false;
+}
+
+function addOportunity(){
+  $.ajax({
+    url:'controller/ControllerAddOportunity.php',
+    type:'post',
+    data: $("#formOportunidadRegistro").serialize(),
+    success:function (response) {
+      alert(response);
+    }
+
+  });
+
+
   return false;
 }

@@ -57,7 +57,7 @@ require_once("header.php");
               </div>
               <div class="ml-3" id="campo"></div>
               <div class="ml-3" id="campo">
-                <input type="hidden" value="" id="valor">
+                <input type="hidden"  id="valor">
               </div>
               <!-- /.card-body -->
             </form>
@@ -65,10 +65,10 @@ require_once("header.php");
           <!-- /.card -->
 
           <div class="row">
-            <form class="col-12">
+            <form class="col-12" id="formOportunidadRegistro" method="post" onsubmit="return addOportunity(); ">
               <div class="card card-warning" id="tabla"></div>
-              <div><input type="hidden" class="form-control" value="<?php echo $id;?>"></div>
-              <!-- /.card -->
+              <div><input type="hidden" class="form-control" value="<?php echo $id;?>" name="id" id="id" required></div>
+
             </form>
           </div>
         </div>
