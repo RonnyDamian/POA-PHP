@@ -4,6 +4,7 @@ require_once "../model/Oportunity.php";
 $tabla =$_POST['table'];
 $fila =$_POST['row'];
 $columna =$_POST['column'];
+$id_Empresa=$_POST['id'];
 
 $rowFila =$fila/$tabla;
 $column =$columna/$fila;
@@ -33,9 +34,8 @@ die();*/
   "fila"=>$_POST['row'],
   "columna"=>$_POST['column']
 );*/
-print_r($data);
-die();
 
-echo Oportunity::addOportunity($data);
+
+echo Oportunity::addOportunity($data,$tabla,$fila,$columna, $id_Empresa);
 
 ?>
